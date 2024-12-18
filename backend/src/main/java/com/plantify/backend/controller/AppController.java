@@ -1,28 +1,21 @@
 package com.plantify.backend.controller;
 
-
-
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.plantify.backend.model.RequestData;
-import com.plantify.backend.model.ResponseData;
-
-@Controller
-@RequestMapping("/api")
+// This AppController is what we will use for the root paths of our API.
+@RestController
+@RequestMapping("/")
 public class AppController {
-    @GetMapping("/greeting")
-    public String greet() {
-        return "hello from api";
+
+    @GetMapping
+    public String home() {
+        return "Welcome to the Plantify API!";
     }
 
-    @PostMapping("/data")
-    public ResponseData processData(@RequestBody RequestData requestData) {
-        ResponseData responseData = new ResponseData();
-        responseData.setMessage("data processed");
-        return responseData;
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "API is running!";
     }
 }
