@@ -1,6 +1,28 @@
+#form-container{
+    display: flex;
+    flex-direction: row;
+}
+
 #data-entry {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     flex: auto;
+}
 
+.form-input {
+    width: 10vw;
+    height: 5vh;
+}
+
+#form-submit {
+    width: 10vw;
+    height: 5vh;
+}
+
+#sign-in-btn {
+    width: 10vw;
+    height: 5vh;
 }
