@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [],
+  imports: [RouterOutlet],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
