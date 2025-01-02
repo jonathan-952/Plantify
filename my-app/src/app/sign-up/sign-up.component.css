@@ -1,0 +1,19 @@
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: auto;
+}
+
+.input {
+    width: 10vw;
+    height: 5vh;
+    border-radius: 10px;
+}
+
+#form-submit {
+    width: 10vw;
+    height: 5vh;
+}
