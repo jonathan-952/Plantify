@@ -1,29 +1,45 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+    background-color: rgba(211, 211, 211, 0.224);
+
+}  
+
 #form_container {
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0;
-    
+    width: 30vw;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px lightgrey;
 }
 
 #data_entry {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 5px;
     flex: auto;
+    max-width: 75%;
 }
 
 .form_labels {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 0;
-    outline: solid red 1px;
 }
 
 .radio_btns {
     display: flex;
     flex-direction: row;
+    gap: 10px;
+}
+
+.radio {
+    accent-color: rgb(16,140,92)
 }
 
 #data1 {
@@ -34,19 +50,19 @@
     width: 20vw;
     height: 6vh;
     border-radius: 5px;
-    background-color: rgb(248, 252, 244);
+    background-color: rgb(244, 252, 248);
     border: none;
-    margin-top: 0;
-    outline: solid red 1px;
-}
-.form_input::placeholder {
-    color: grey;
+    margin-bottom: 12px;
+
 }
 
 #form_submit {
+    margin-top: 20px;
     width: 20vw;
     height: 7vh;
     background-color: rgb(16,140,92);
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
 #sign_in_btn {
