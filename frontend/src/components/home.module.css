@@ -1,0 +1,88 @@
+.home_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_buttons {
+    width: 20vw;
+    height: 7vh;
+    background-color: rgb(16,140,92);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.plant_container {
+    position: relative;
+    width: 200px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+}
+
+.shadow {
+  position: absolute;
+  width: 100px; /* Adjust for proper shadow size */
+  height: 30px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: #bbdbc5;
+  filter: blur(5px);
+  border-radius: 50%;
+}
+
+.plant {
+  position: absolute;
+  width: 166px;
+  height: 208.83px;
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.leaf1 {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  left: 20px;
+  top: 40px;
+  background: linear-gradient(180deg, #92eb63 0%, #478b23 100%);
+  border-top-left-radius: 90%;
+  border-top-right-radius: 290%;
+  transform: rotate(-30deg);
+}
+
+.leaf2 {
+  position: absolute;
+  width: 60px;
+  height: 120px;
+  left: 80px;
+  top: 20px;
+  background: linear-gradient(180deg, #defa68 0%, #8eac09 89.37%);
+  border-top-left-radius: 90%;
+  border-top-right-radius: 290%;
+  transform: rotate(15deg);
+}
+
+.leaf3 {
+  position: absolute;
+  width: 50px;
+  height: 120px;
+  left: 110px;
+  top: 50px;
+  background: linear-gradient(180deg, #92eb63 0%, #478b23 100%);
+  border-top-left-radius: 290%;
+  border-top-right-radius: 90%;
+  transform: rotate(45deg);
+}
+
+.stem {
+  position: absolute;
+  width: 22px;
+  height: 110px;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, #47c44f 0%, rgba(19, 102, 27, 0.992314) 100%);
+  border-radius: 10px;
+}
