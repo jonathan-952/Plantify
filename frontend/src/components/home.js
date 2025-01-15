@@ -21,12 +21,14 @@ export default function HomePage() {
             <h1>Home</h1>
             <Plant/>
             <p>Welcome!</p>
-            <Link to = '/report'>
-                <button className = {styles.nav_buttons}>Write Report</button>
-            </Link>
-            <Link to = '/profile'>
-                <button className = {styles.nav_buttons}>My Profile</button>
-            </Link>
+            <div className = {styles.button_container}>
+                <Link to = '/report'>
+                    <button className = {styles.nav_buttons}>Write Report</button>
+                </Link>
+                <Link to = '/profile'>
+                    <button className = {styles.nav_buttons}>My Profile</button>
+                </Link>
+            </div>
         </div>
     )
 }

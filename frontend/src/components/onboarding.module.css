@@ -1,0 +1,67 @@
+.onboarding_container {
+    padding-top: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.prog_active {
+    background-color: rgba(20,65,66,255);
+    transition-duration: 1;
+}
+
+.next_btn {
+    margin-top: 20px;
+    width: 12vw;
+    height: 7vh;
+    background-color: rgb(16,140,92);
+    margin-bottom: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.prog_bar_container {
+    display: flex;
+    justify-content: row;
+    gap: 15px;
+    margin: 50px;
+
+}
+
+.prog_bar_container > * {
+    width: 40px;
+    height: 10px;
+    border-radius: 10px;
+    outline: solid black 1px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.big_text {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.small_text {
+    font-size: 15px;
+    margin: 0;
+    color: grey;
+}
+
+#back_arrow {
+    position: absolute;
+    bottom: 80vh;
+    right: 95vw;
+    border-radius: 20px;
+    cursor: pointer;
+
+  
+}

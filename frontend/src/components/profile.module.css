@@ -1,8 +1,6 @@
 #body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 5vh;
 }  
 
@@ -35,6 +33,10 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    
+}
+
+.radio_btn {
     accent-color: rgb(16,140,92);
 }
 
@@ -49,22 +51,42 @@
     background-color: rgb(244, 252, 248);
     border: none;
     margin-bottom: 12px;
-    cursor: pointer;
 
 }
 
-#form_submit {
+.form_submit {
     margin-top: 20px;
     width: 20vw;
     height: 7vh;
-    background-color: rgb(16,140,92);
     margin-bottom: 20px;
     border-radius: 5px;
     color: white;
-    cursor: pointer;
+    
 }
 
+.form_submit:hover {
+    transition-duration: 0.4s;
+}
+
+.update_active {
+    background-color: rgb(16,140,92);
+    cursor: pointer;
+
+}
+
+.update_inactive {
+    cursor: not-allowed;
+    background-color: lightgrey;
+}
 #sign_in_btn {
     width: 10vw;
     height: 5vh;
 }
+
+#body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5vh;
+
+} 
