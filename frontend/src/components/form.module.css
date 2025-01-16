@@ -41,7 +41,6 @@
 #data1 {
     background-color: white;
 }
-
 .form_input {
     width: 20vw;
     height: 6vh;
@@ -49,7 +48,6 @@
     background-color: rgb(244, 252, 248);
     border: none;
     margin-bottom: 12px;
-    cursor: pointer;
 
 }
 
