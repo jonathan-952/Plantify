@@ -23,6 +23,7 @@ export default function Profile() {
         e.preventDefault();
 
         if (e.target.checkValidity()) {
+            // once update profile endpoint is up, add it here
         }
     }
 

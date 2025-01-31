@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 5vh;
+    padding: 20px;
 }  
 
 #form_container {
@@ -10,8 +11,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30vw;
+    width: 90%;
+    max-width: 600px;
     border-radius: 10px;
+    padding: 20px;
     box-shadow: 0px 0px 10px lightgrey;
 }
 
@@ -20,11 +23,12 @@
     flex-direction: column;
     gap: 5px;
     flex: auto;
+    width: 100%;
     max-width: 75%;
 }
 
 .form_labels {
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
     margin-bottom: 0;
 }
@@ -45,19 +49,20 @@
 }
 
 .form_input {
-    width: 20vw;
-    height: 6vh;
+    width: 100%;
+    height: 5vh;
     border-radius: 5px;
     background-color: rgb(244, 252, 248);
     border: none;
     margin-bottom: 12px;
+    padding: 8px; /* Add padding for better input experience */
 
 }
 
 .form_submit {
     margin-top: 20px;
-    width: 20vw;
-    height: 7vh;
+    width: 100%;
+    height: 6vh;
     margin-bottom: 20px;
     border-radius: 5px;
     color: white;
@@ -78,15 +83,27 @@
     cursor: not-allowed;
     background-color: lightgrey;
 }
-#sign_in_btn {
-    width: 10vw;
-    height: 5vh;
-}
 
 #body {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 5vh;
+    padding: 20px;
 
 } 
+
+@media (min-width: 768px) {
+    #form_container {
+        width: 60%; /* Wider form for tablets and up */
+    }
+
+    .form_input, #form_submit, #sign_in_btn {
+        width: 80%; /* Larger inputs and buttons */
+    }
+
+    .form_labels {
+        font-size: 1.2rem; /* Larger font size for better readability */
+        padding-top: 10px;
+    }
+}

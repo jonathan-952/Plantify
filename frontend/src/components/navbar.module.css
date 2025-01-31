@@ -1,10 +1,9 @@
 .navbar_container {
-    min-width: 99vw;
-    min-height: 8vh;
+    min-width: 100vw;
+    min-height: 9vh;
     /* border-radius: 5px; */
     position: sticky;
     top: 0;
-    margin-top: 10px;
     box-shadow: 5px 5px 12px grey;
     background-color: white;
 }
